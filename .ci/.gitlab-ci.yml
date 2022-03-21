@@ -1,0 +1,4 @@
+include:
+  - project: 'samsung/pmc-2/development/shared-ci'
+    ref: main
+    file: '/storybook.yml'
