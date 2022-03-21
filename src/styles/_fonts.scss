@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "SamsungSharpSans";
+    src: url("#{$font-path}/SamsungSharpSans-Bold.eot");
+    src: url("#{$font-path}/SamsungSharpSans-Bold.eot?#iefix") format("embedded-opentype"), url("#{$font-path}/SamsungSharpSans-Bold.woff") format("woff");
+    font-weight: 800;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "SamsungOne";
+    src: url("#{$font-path}/SamsungOneLatinCompact-400.eot"), url("#{$font-path}/SamsungOneLatinCompact-400.woff") format("woff"),
+        url("#{$font-path}/SamsungOne-400_v1.0.ttf") format("truetype"), url("#{$font-path}/SamsungOneLatinCompact-400.svg") format("svg");
+    font-weight: 400;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "SamsungOne 700";
+    src: url("#{$font-path}/SamsungOne-700.woff2") format("woff2"), url("#{$font-path}/SamsungOne-700.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("#{$font-path}/fa-solid-900.eot");
+    src: url("#{$font-path}/fa-solid-900.eot#iefix&v=4.0.3") format("embedded-opentype"), url("#{$font-path}/fa-solid-900.woff") format("woff"),
+        url("#{$font-path}/fa-solid-900.ttf") format("truetype"), url("#{$font-path}/fa-solid-900.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+

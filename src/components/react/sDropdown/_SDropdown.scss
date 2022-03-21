@@ -1,0 +1,138 @@
+// Style for dropdown menu- one which keeps selected value
+.dropdown-select.v2 {
+    .MuiInput-input {
+        @extend %body-2;
+        font-weight: 700;
+        line-height: 17px;
+
+        &:focus {
+            background-color: transparent;
+        }
+    }
+
+    input {
+        border: none;
+    }
+}
+
+.MuiPopover-paper {
+    box-shadow: $box-shadow-2 !important;
+    min-width: 310px !important;
+
+    li {
+        @extend %body-2;
+        line-height: 17px;
+        color: $black-brand;
+        padding: 12px 24px 11px;
+
+        &.Mui-selected {
+            font-weight: 700;
+            background-color: transparent;
+            position: relative;
+
+            &:hover {
+                background-color: $gray-1;
+            }
+
+            &:after {
+                content: "\f00c"; // icon check
+                font-family: $font-family-icons;
+                position: absolute;
+                font-size: 16px;
+                right: 24px;
+            }
+        }
+
+        &:hover {
+            color: $gray-9;
+            background-color: $gray-1;
+        }
+
+        .MuiTouchRipple-root {
+            display: none;
+        }
+    }
+}
+
+.s-dropdown-no-underline {
+    width: 100%;
+
+    .MuiInput-underline:after,
+    .MuiInput-underline:before {
+        content: none;
+    }
+}
+
+.s-dropdown-underline {
+    width: 100%;
+
+    .MuiInput-underline:before {
+        border-color: $gray-6;
+    }
+
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+        border-bottom: 2px solid $primary-blue;
+    }
+
+    .MuiInput-underline:after {
+        border-color: $primary-blue;
+    }
+
+    .Mui-focused:after {
+        transition: none;
+    }
+
+    .Mui-disabled:before,
+    .disabled:before {
+        border-color: $gray-3;
+        border-bottom-style: solid;
+    }
+
+    .Mui-error:before,
+    .Mui-error:after {
+        border-color: $red-secondary;
+    }
+
+    .dropdown-select.v2 .MuiInput-input {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .MuiSelect-icon {
+        right: 8px;
+    }
+}
+
+.s-dropdown-label {
+    &.MuiFormLabel-root {
+        @extend %body-1;
+        color: $gray-6;
+        font-weight: 700;
+
+        &.Mui-focused {
+            color: $primary-blue;
+        }
+
+        &.MuiInputLabel-formControl {
+            top: -6px;
+        }
+    }
+
+    &.MuiInputLabel-shrink {
+        font-size: 14px;
+        transform: translate(0, 4px) scale(1);
+        color: $black-brand;
+    }
+
+    &.Mui-disabled {
+        color: $gray-3;
+    }
+
+    &.Mui-focused {
+        color: $primary-blue;
+    }
+
+    &.Mui-error {
+        color: $red-secondary;
+    }
+}

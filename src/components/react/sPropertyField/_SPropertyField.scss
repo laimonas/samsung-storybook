@@ -1,0 +1,39 @@
+.s-property-field {
+    width: 100%;
+
+    &__tooltip-container {
+        .overlay-wrapper {
+            display: inline-flex;
+            margin-left: 0.5rem;
+            order: 3;
+            transform: scale(1.333);
+        }
+    }
+
+    &__edit-actions {
+        position: absolute;
+        right: 0;
+        bottom: 0.25rem;
+
+        &--with-helper-text {
+            position: absolute;
+            right: 0;
+            bottom: 1.5rem;
+        }
+    }
+
+    &__edit {
+        position: absolute;
+        right: 0;
+        top: 0.75em;
+    }
+
+    .MuiSelect-icon {
+        top: 0.5rem;
+
+        &.Mui-disabled {
+            color: $gray-3;
+        }
+    }
+}
+

@@ -1,0 +1,127 @@
+.s-multiselect {
+    .p-multiselect {
+        display: flex;
+        align-items: center;
+        height: $input-field-height;
+        border-radius: $border-radius-bigger;
+        @extend %body-3;
+
+        &-label {
+            display: inline-block;
+            align-self: center;
+            padding: 0;
+            display: flex;
+
+            &-container {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &-clear-icon,
+        &-trigger-icon {
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+
+    .p-multiselect:not(.p-disabled).p-focus {
+        border-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.s-multiselect-table {
+    .p-multiselect {
+        height: $input-field-height;
+        border-radius: $border-radius-bigger;
+        @extend %body-3;
+    }
+}
+
+.s-multiselect-standalone {
+    .p-multiselect {
+        background-color: transparent;
+
+        &-label {
+            @extend %body-2;
+            font-weight: 700;
+            line-height: 17px;
+        }
+
+        .p-multiselect-label.p-placeholder {
+            color: $black-brand;
+        }
+    }
+}
+
+.s-multiselect-panel {
+    @extend %body-3;
+    min-width: 330px !important;
+    border-radius: $border-radius-small;
+    box-shadow: $box-shadow-2;
+
+    .p-multiselect-items .p-multiselect-item-group {
+        font-weight: 700;
+        color: $black-brand;
+        padding-left: 27px;
+    }
+
+    .p-multiselect-items-wrapper {
+        max-height: 240px !important;
+    }
+
+    .p-multiselect-items .p-multiselect-item {
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .p-multiselect-items .p-multiselect-item.p-highlight {
+        color: rgba(0, 0, 0, 0.87);
+        background: transparent;
+    }
+
+    .p-checkbox-box {
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgb(85, 85, 85);
+        border-radius: 2px;
+        box-shadow: none;
+        margin-left: 27px;
+    }
+
+    .p-checkbox-box.p-highlight {
+        border-color: $primary-blue;
+        background: $primary-blue;
+    }
+
+    .p-checkbox-icon.p-c.pi.pi-check {
+        display: block;
+        color: #ffffff;
+        font-size: 8px;
+        font-weight: bold;
+    }
+}
+
+.s-panel-footer {
+    padding: 7px 27px;
+    border-top: 1px solid $gray-3;
+}
+
+.s-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    min-height: 48px;
+    border-bottom: 1px solid $gray-3;
+
+    &__filter {
+        margin: 0 20px 0 7px;
+        width: 100%;
+        min-height: 48px;
+    }
+
+    &__close {
+        margin-right: 20px;
+    }
+}

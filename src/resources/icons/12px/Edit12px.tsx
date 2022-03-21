@@ -1,0 +1,7 @@
+import * as React from "react";
+
+function Edit12px(props: React.SVGProps<SVGSVGElement>) {
+  return <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="12px" height="12px" viewBox="0 0 12px 12px" {...props}><defs><path id="edit12px-a" d="M7.85857693,0.609341879 C8.10235945,0.36618604 8.49786555,0.36618604 8.74164807,0.609341879 L8.74164807,0.609341879 L11.3897731,3.25734188 C11.6341914,3.5011319 11.6341914,3.89769036 11.3902559,4.14162583 L11.3902559,4.14162583 L4.97535339,10.5575284 C4.86011387,10.6727679 4.6814001,10.7714672 4.52250248,10.8076342 L4.52250248,10.8076342 L1.10863205,11.5845581 C0.68201516,11.6824572 0.317567831,11.3180098 0.415277282,10.8922223 L0.415277282,10.8922223 L1.19239434,7.4791322 C1.22855784,7.3202499 1.32725709,7.14153613 1.4424725,7.02632072 L1.4424725,7.02632072 Z M1.9952757,8.451975 L1.539,10.46 L3.5442757,10.003975 L1.9952757,8.451975 Z M8.3,1.581 L2.4202757,7.460975 L4.5362757,9.580975 L10.418,3.699 L8.3,1.581 Z" /></defs><g fill="none" fillRule="evenodd"><mask id="edit12px-b" fill="#fff"><use xlinkHref="#edit12px-a" /></mask><use fill="currentColor" fillRule="nonzero" xlinkHref="#edit12px-a" /><g fill="currentColor" mask="url(#edit12px-b)"><rect width={12} height={12} /></g></g></svg>;
+}
+
+export default Edit12px;

@@ -1,0 +1,20 @@
+.s-date-picker {
+    position: relative;
+
+    .p-calendar {
+        position: absolute;
+        top: 2.5rem;
+        right: 0;
+        padding-bottom: 0.25rem;
+        background-color: transparent;
+        border: none;
+    }
+
+    button.p-disabled > span::before {
+        color: $gray-3 !important;
+    }
+
+    .p-inputtext {
+        display: none;
+    }
+}

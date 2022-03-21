@@ -1,0 +1,7 @@
+import * as React from "react";
+
+function Delete12px(props: React.SVGProps<SVGSVGElement>) {
+  return <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="12px" height="12px" viewBox="0 0 12px 12px" {...props}><defs><path id="delete12px-a" d="M7.5,0.25 C7.81353852,0.25 8.07353593,0.481493905 8.11821696,0.782706452 L8.125,0.875 L8.125,1.875 L10.875,1.875 L10.875,2.875 L10.106,2.875 L9.43189605,11.1653922 C9.40816733,11.4609226 9.18072795,11.6980306 8.89542064,11.7424969 L8.798375,11.75 L3.201625,11.75 C2.90525867,11.75 2.65055553,11.542445 2.58338915,11.2619361 L2.56814626,11.1659158 L1.893,2.875 L1.125,2.875 L1.125,1.875 L3.875,1.875 L3.875,0.875 C3.875,0.561461477 4.10649391,0.30146407 4.40770645,0.256783042 L4.5,0.25 L7.5,0.25 Z M9.102,2.875 L2.897,2.875 L3.537,10.75 L8.462,10.75 L9.102,2.875 Z M7.625,4.5 L7.625,9.25 L6.625,9.25 L6.625,4.5 L7.625,4.5 Z M5.375,4.5 L5.375,9.25 L4.375,9.25 L4.375,4.5 L5.375,4.5 Z M7.125,1.25 L4.875,1.25 L4.875,1.875 L7.125,1.875 L7.125,1.25 Z" /></defs><g fill="none" fillRule="evenodd"><mask id="delete12px-b" fill="#fff"><use xlinkHref="#delete12px-a" /></mask><use fill="currentColor" fillRule="nonzero" xlinkHref="#delete12px-a" /><g fill="currentColor" mask="url(#delete12px-b)"><rect width={12} height={12} /></g></g></svg>;
+}
+
+export default Delete12px;

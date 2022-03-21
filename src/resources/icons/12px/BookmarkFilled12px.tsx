@@ -1,0 +1,7 @@
+import * as React from "react";
+
+function BookmarkFilled12px(props: React.SVGProps<SVGSVGElement>) {
+  return <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="12px" height="12px" viewBox="0 0 12px 12px" {...props}><defs><path id="bookmarkfilled12px-a" d="M4.12930971,3.93414424 L0.519821146,4.19760036 L0.427816444,4.21076292 C-0.0128810398,4.30729211 -0.158829063,4.84948122 0.208630529,5.15846149 L2.97023727,7.47569948 L2.10839225,10.9607942 L2.09256059,11.0521692 C2.0483469,11.5002824 2.5156223,11.8076815 2.92377659,11.5565096 L6.00005856,9.66120924 L9.07629813,11.5563921 L9.15858181,11.5993234 C9.57224028,11.7779737 10.006824,11.4258219 9.89191187,10.96095 L9.02889003,7.47569948 L11.7911024,5.15880495 L11.8578855,5.09404012 C12.1581967,4.75669932 11.9592983,4.23168758 11.4795529,4.19754512 L7.8698176,3.93414424 L6.50477282,0.609222173 C6.31072254,0.137559276 5.68941933,0.137559276 5.49536904,0.609222173 L4.12930971,3.93414424 Z" /></defs><g fill="none" fillRule="evenodd"><mask id="bookmarkfilled12px-b" fill="#fff"><use xlinkHref="#bookmarkfilled12px-a" /></mask><use fill="currentColor" fillRule="nonzero" xlinkHref="#bookmarkfilled12px-a" /><g fill="currentColor" mask="url(#bookmarkfilled12px-b)"><rect width={12} height={12} /></g></g></svg>;
+}
+
+export default BookmarkFilled12px;

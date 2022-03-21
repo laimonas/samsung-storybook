@@ -1,0 +1,48 @@
+.s-modal {
+    .modal-dialog {
+        @include media-breakpoint-down(sm) {
+            min-width: 100vw;
+            min-height: 100vh;
+            margin: 0;
+        }
+    }
+
+    .modal-container {
+        max-height: 80vh;
+        @include media-breakpoint-down(sm) {
+            min-width: 100vw;
+            min-height: 100vh;
+        }
+    }
+
+    .modal-header {
+        padding: 2.5rem 2.25rem 1.5rem;
+        border: 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 1rem;
+        }
+    }
+
+    .modal-body {
+        @extend %body-1;
+        padding: 0 2.25rem 1.5rem 2.25rem;
+        overflow-wrap: break-word;
+        overflow-y: auto;
+
+        @include media-breakpoint-down(sm) {
+            padding: 0 1rem;
+        }
+    }
+
+    .modal-footer {
+        justify-content: center;
+        padding-top: 1.5rem;
+        padding-bottom: 2.25rem;
+        border: 0;
+
+        @include media-breakpoint-down(md) {
+            padding: 1rem;
+        }
+    }
+}

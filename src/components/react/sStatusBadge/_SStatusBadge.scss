@@ -1,0 +1,38 @@
+@mixin setColor($color) {
+    color: $color;
+    border-color: $color;
+}
+
+.s-status-badge {
+    border: 1px solid;
+    border-radius: $border-radius-small;
+    width: fit-content;
+    padding: 2px 8px;
+    @extend %body-3;
+    font-family: $font-family-copy-700;
+    text-indent: 0;
+
+    &--green {
+        @include setColor($green-secondary-light);
+    }
+
+    &--light-gray {
+        @include setColor($gray-5);
+    }
+
+    &--dark-gray {
+        @include setColor($gray-10);
+    }
+
+    &--orange {
+        @include setColor($orange-secondary);
+    }
+
+    &--sky-blue {
+        @include setColor($primary-blue);
+    }
+
+    &--teal {
+        @include setColor($green-secondary);
+    }
+}

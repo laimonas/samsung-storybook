@@ -1,0 +1,71 @@
+﻿.s-number-counter {
+
+    input {
+        width: 3rem;
+        border: 1px solid $gray-3;
+        @extend .p2;
+        @extend %body-2;
+        text-align: center;
+        line-height: $body3-line-height;
+
+        &::-webkit-inner-spin-button {
+            display: none;
+        }
+
+        &:focus {
+            border: 1px solid $primary-blue;
+            outline: none;
+        }
+
+        &:disabled {
+            background-color: white;
+            color: $gray-3;
+        }
+    }
+
+    &__btn {
+        @extend %body-2;
+        font-weight: bold;
+        @extend .p2;
+        text-decoration: none;
+        white-space: nowrap;
+        line-height: $body3-line-height;
+        border: 1px solid $gray-3;
+        background-color: transparent;
+
+        &:disabled {
+            .svg-icon {
+                fill: $gray-3;
+            }
+        }
+
+        &.increase-btn {
+            border-top-right-radius: $border-radius-medium;
+            border-bottom-right-radius: $border-radius-medium;
+            border-left: none;
+        }
+
+        &.reduce-btn {
+            border-top-left-radius: $border-radius-medium;
+            border-bottom-left-radius: $border-radius-medium;
+            border-right: none;
+        }
+    }
+
+    &.minimal {
+        .s-number-counter__btn {
+            border: none;
+            @extend .p1;
+        }
+
+        input {
+            width: 2rem;
+            border: none;
+            @extend .py1;
+
+            &:focus {
+                border: 1px solid $primary-blue;
+            }
+        }
+    }
+}
